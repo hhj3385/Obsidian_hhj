@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>파트너</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>파트너</strong>
+      </div>
+      <div class="meta" id="meta">연결 중…</div>
+      <button class="ghost" id="reset" type="button" title="새 대화 시작">새 대화</button>
+    </header>
+
+    <main id="thread" class="thread">
+      <div class="empty" id="empty">
+        <h1>무슨 생각 중이야?</h1>
+        <p>
+          볼트에 있는 걸 먼저 찾아보고 얘기할게. 예전에 써둔 것도 다 읽을 수 있어.
+        </p>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+    </main>
+
+    <form class="composer" id="composer">
+      <textarea
+        id="input"
+        rows="1"
+        placeholder="편하게 얘기해 — Enter 전송, Shift+Enter 줄바꿈"
+        autocomplete="off"
+      ></textarea>
+      <button id="send" type="submit" title="보내기">보내기</button>
+    </form>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
